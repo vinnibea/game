@@ -78,7 +78,6 @@ export const styles = {
     article: {
         box: {
             position: "relative",
-            // minHeight: "100vh",
             margin: "-50px -75px",
             marign: "0 auto"
         },
