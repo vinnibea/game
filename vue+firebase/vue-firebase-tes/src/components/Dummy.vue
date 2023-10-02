@@ -214,8 +214,10 @@ const inputSearch = async () => {
             <section class="messenger">
 
                 <div v-for="msg in sortedMessages" :key="msg.id" @click="onReply(msg)">
-                    <div v-if="msg?.text?.length" ref="messenger" class='messages' :class="msg?.author?.userID === useAuthStore()?.authUser.uid ? 'messages-auth' : 'messages-guest',
-                        reply?.id === msg.id ? 'active-chat' : ''">
+                    <div v-if="msg?.text?.length" ref="messenger" class='messages' :class="{
+                        'messages-auth': msg?.author?.userID === useAuthStore()?.authUser.uid, 'messages-guest': msg?.author?.userID !== useAuthStore()?.authUser.uid,
+                        'active-chat': reply?.id === msg.id,
+                    }">
 
                         <div class="message-content">
                             <div v-if="msg?.reply?.text.length" class="messenger-reply messenger-reply-in-message">
@@ -363,8 +365,6 @@ const inputSearch = async () => {
     padding: 4px;
     cursor: pointer;
 }
-
-.messenger-user-main {}
 
 .messenger-user-last-message-about {
     display: flex;

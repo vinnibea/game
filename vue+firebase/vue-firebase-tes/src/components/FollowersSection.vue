@@ -14,7 +14,7 @@ defineProps({
             <h3 class="followers-title"> {{ followStore.followers?.length || 0 }}
                 <span class="followers-title-span"> Followers </span>
                 <div>
-                    <img v-for="follower in followStore.followers" :key="followStore.followers.uid"
+                    <img v-for="follower in followStore.followers" :key="follower.uid"
                         class="post-userImg post-userImg--follower" :src="follower.photoURL" width="20" height="20" />
                 </div>
             </h3>
