@@ -165,7 +165,6 @@ watch(()=> route.params.id, () => {
      backdrop-filter: blur(12px);
      padding-left: 20px;
      font-size: 18px;
-
  }
 
  .header-search {
@@ -254,7 +253,7 @@ watch(()=> route.params.id, () => {
      .header-search-input {
          width: 40px;
          height: 40px;
-         padding: 0px 20px;
+         padding: 0px;
          border-radius: 50%;
          background-color: rgba(239, 239, 239, 0.345);
          border: 1px solid rgba(255, 255, 255, 0.037);
@@ -270,7 +269,7 @@ watch(()=> route.params.id, () => {
      .header-search-input:hover {
          width: 120px;
          border-radius: 16px;
-         padding-left: 40px;
+         padding-left: 20px;
      }
 
      .header-search-input:hover::placeholder {
@@ -280,7 +279,7 @@ watch(()=> route.params.id, () => {
 
      .header-search-input:focus {
          border-radius: 16px;
-         width: 120px;
+         width: 90px;
          padding-left: 20px;
      }
 
@@ -288,5 +287,17 @@ watch(()=> route.params.id, () => {
          opacity: 1;
          font-size: 12px;
      }
+
+     .header-center {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        opacity: 1;
+        backdrop-filter: blur(12px);
+        padding-left: 2px;
+        font-size: 14px;
+    }
 
  }</style>

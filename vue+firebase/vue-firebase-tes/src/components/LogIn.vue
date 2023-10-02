@@ -75,7 +75,7 @@ const validator = () => {
     --color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
-    min-width: 600px;
+    min-width: 100vw;
     padding: 20px;
     place-self: center;
     gap: 20px;

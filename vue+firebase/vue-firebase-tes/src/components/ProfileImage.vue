@@ -7,13 +7,13 @@ const props = defineProps({
     width: {
         type: Number,
         required: true,
-        default: 400,
+        default: 320,
     },
 
     height: {
         type: Number,
         required: true,
-        default: 400,
+        default: 320,
     },
     src: {
         type: String,

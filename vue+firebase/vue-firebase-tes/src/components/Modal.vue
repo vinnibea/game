@@ -142,9 +142,10 @@ onMounted(() => {
     }
 
     .modal-close {
-        font-size: 18px;
+        font-size: 24px;
         top: 5px;
         left: 2px;
+        padding: 4px;
     }
  }
 

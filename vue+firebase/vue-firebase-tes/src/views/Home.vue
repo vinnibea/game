@@ -363,7 +363,6 @@ body {
   width: 100%;
   margin: 50px 0 0 0;
   padding: 0 120px;
-  border-right: 1px solid rgba(60, 54, 54, 0.068);
   background-color: rgba(175, 175, 175, 0.763);
 }
 
@@ -443,7 +442,6 @@ body {
   }
 
   .user {
- 
     width: 100%;
     padding: 0;
   }
@@ -465,15 +463,26 @@ body {
   
   .main-selector-list {
     position: sticky;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     border-top: 1px solid rgba(167, 164, 164, 0.257);
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
   .main-selector-list-item {
     display: flex;
     justify-content: center;
     width: 33%;
+    padding: 4px;
+  }
+
+  .user-name {
+    font-size: 18px;
+  } 
+
+  .btn--edit {
+    font-size: 12px;
   }
 }
 </style>

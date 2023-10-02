@@ -121,7 +121,6 @@ const store = useAuthStore();
         position: sticky;
         bottom: 0;
         margin: 0;
-        padding: 6px;
     }
     .aside-nav-ul {
         flex-direction: row;
@@ -140,6 +139,10 @@ const store = useAuthStore();
 
     .aside-nav-items {
         margin: 0;
+    }
+
+    .aside-nav-items .pi {
+        font-size: 18px;
     }
 }
 </style>
